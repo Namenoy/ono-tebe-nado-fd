@@ -31,8 +31,7 @@ a {
 }
 
 img {
-  min-width: 89px;
-  min-height: 105px;
+  width: 100%;
 }
 
 button {

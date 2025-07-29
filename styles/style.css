@@ -1,25 +1,28 @@
 .header{
     display: grid;
     width: 100%;
+    margin-bottom: 65px;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr min-content 1fr;
+    font-weight: 400;
+    font-size: 18px;
+    padding-top: 68px;
 }
 
 .header__menu{
-    display: grid;
-    grid-template-columns: 1fr min-content 1fr;
+    display: flex;
     align-items: center;
-    height: 293px;
-    font-weight: 400;
-    font-size: 18px;
-    gap: 20px;
+    justify-content: space-around;
 }
 
 .header__link__list-item{
-    display: flex;
+    display: grid;
     margin-bottom: 5px;
+    grid-template-columns: repeat(3, auto);
     list-style: circle;
-    justify-content: space-evenly;
-    padding-left:35px;
-    gap: 20px;
+    gap: 31px;
+    margin-left: 17px;
 }
 
 .link_no-circle{
@@ -30,22 +33,25 @@
     text-decoration: none;
 }
 
-.adress{
+.address{
     display: flex;
     flex-direction: column;
     text-underline-offset: 5px;
     width: 240px;
-    line-height: 24.3px;
+    line-height: 1.4em;
+    font-style: normal;
 }
 
-.header__adress{
+.header__address{
     margin-bottom: 5px;
     margin-right: 50px;
     justify-self: end;
 }
 
 
-.header__logo{
+.header__images{
+    width: 155px;
+    height: 155px;
     padding: 10px;
 }
 
@@ -54,8 +60,7 @@
     position: relative;
     flex-direction: column;
     width: 1100px;
-    height: 757px;
-    background-image: url("/images/cover.jpg");
+    background-image: url("../images/cover.jpg");
     background-size: cover;
     background-position: center;
 }
@@ -64,6 +69,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
+    inset: 0;
     background-color: rgba(0, 0, 0, 0.600);
     z-index: 0;
 }
@@ -73,6 +79,7 @@
     display: flex;
     font-weight: 700;
     flex-direction: column; 
+    padding-top: 166px;
     width: 100%;
     height: 100%;
     justify-content: center;
@@ -81,9 +88,8 @@
     gap: 15px;
     font-size: 100px;
     color: white;
-    padding-left: 45px;
+    padding-left: 50px;
     padding-right: 20px;
-    margin-bottom: -60px;
     line-height: 115%;
 }
 
@@ -96,6 +102,7 @@
 }
 .text_right{
     text-align: right;
+    padding-top: 5px;
 }
 
 .cover__text__description{
@@ -103,18 +110,19 @@
     color: white;
     z-index: 1;
     flex-direction: row;
+    padding-top: 107px;
     align-items: center;
     justify-content:space-between;
     word-spacing: 18px;
-    margin: 0 53px 48px 48px;
+    margin: 0 51px 46px 52px;
     font-weight: 400;
     font-size: 22px;
     text-transform: uppercase;   
-    padding-bottom: 2px;
+    padding-bottom: 4px;
 }
 .cover__text__description button{
     text-transform: uppercase;
-    width: 256px;
+    width: 254px;
     height: 51px;
     color: white;
     background-color: rgba(4, 4, 4, 0); 
@@ -127,12 +135,11 @@
     flex-direction: column;
     margin: 180px 24px 0px 24px;
     width: 1052px;
-    min-height: 723px;
     list-style: none;
 }
 
 .lots_heading{
-    padding: 0 40px 28px 40px;
+    padding: 0 40px 26px 40px;
     text-transform: uppercase;
     font-weight: 700;
     font-size: 40px;
@@ -147,7 +154,7 @@
 .lots__card_item{
     display: flex;
     width: 334px;
-    height: 596px;
+    min-height: 596px;
     flex-direction: column;
     position: relative;
     align-content: center;
@@ -159,7 +166,27 @@
     position: relative;
     justify-content: space-between; 
     width: 334px;
-    height: 596px;
+    height: 100%;
+}
+
+
+.card__link{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card__link {
+    text-decoration: none;
+}
+
+.card__link .card__title{
+    text-decoration:underline;
+}
+
+.card {
+    background-position: center;
+    background-size: cover;
 }
 
 
@@ -178,25 +205,20 @@
     font-size: 20px;
     line-height: 120%;
     padding: 0 40px 48px 40px;
+    text-decoration: none;
     color: white;
 }
 
 .card__film{
-    background-image: url(/images/card-lot-01.jpg);
-    background-position: center;
-    background-size: cover;
+    background-image: url("../images/card-lot-01.jpg");
 }
 
 .card__book{
-    background-image: url(/images/card-lot-02.jpg);
-    background-position: center;
-    background-size: cover;
+    background-image: url("../images/card-lot-02.jpg");
 }
 
 .card__picture{
-    background-image: url(/images/card-lot-03.jpg);
-    background-position: center;
-    background-size: cover;
+    background-image: url("../images/card-lot-03.jpg");
 }
 
 .lots__look-more-link{
@@ -204,7 +226,7 @@
     line-height: 100%;
     font-size: 20px;
     padding-left:40px;
-    margin-top: 32px;
+    margin-top: 33px;
 }
 
 .about{
@@ -214,7 +236,6 @@
 .about__column{
     display: grid;
     width:1052px;
-    min-height: 595px;
     grid-template-columns: 334px 1fr;
     margin: 120px 24px 0 24px;
 }
@@ -252,33 +273,30 @@
     font-weight: 400;
     font-size: 20px;
     flex-direction: column;
-    line-height: 24px;
-    gap: 24px;
+    line-height: 1.2em;
+    gap: 26px;
     grid-column: 2;
-    margin: 7px 5px 0 26px;
+    padding: 8px 8px 0 25px;
 }
 
 .footer{
-    display: grid;
+    display: flex;
+    flex-direction: row;
     width: 1100px;
-    height: 180px;
-    margin-top: 180px;
-    
+    margin-top: 179px;
+    justify-content: space-between;
+    padding: 0 48px 0px 35px;
 }
 
 .footer__menu{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    height: 180px;
-    font-weight: 400;
-    font-size: 18px;
+    display: flex;  
+    font-weight: 400; 
+    font-size: 18px; 
     text-align: center;
-    margin: 0px 50px 82px 50px;
 }
 
 .footer__social-list{
     display: flex;
-    flex-direction: row;
     justify-self: end;
     gap: 50px;
 }
@@ -292,18 +310,21 @@
 }
 
 .item_vk{
-    background-image: url(/images/vk.svg);
+    background-image: url("../images/vk.svg");
 }
 .item_youtube{
-    background-image: url(/images/yt.svg);
+    background-image: url("../images/yt.svg");
 }
 .item_pinterest{
-    background-image: url(/images/pinterest.svg);
+    background-image: url("../images/pinterest.svg");
 }
 
-.footer__adress{
+.footer__address{
     text-align: start;
     justify-self: left;
-    font-style: normal;
-    width: 260px;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 260px;
+    width: 100%;
+    padding-left: 16px;
 }

@@ -40,6 +40,8 @@
     width: 240px;
     line-height: 1.4em;
     font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
 }
 
 .header__address{
@@ -173,15 +175,8 @@
 .card__link{
     display: flex;
     flex-direction: column;
-    height: 100%;
-}
-
-.card__link {
     text-decoration: none;
-}
-
-.card__link .card__title{
-    text-decoration:underline;
+    height: 100%;
 }
 
 .card {
@@ -195,6 +190,7 @@
     z-index: 1;
     color: white;
     font-weight: 700;
+    text-decoration: underline;
     font-size: 22px;
     padding: 48px 40px 0 40px;
 }
@@ -322,8 +318,6 @@
 .footer__address{
     text-align: start;
     justify-self: left;
-    font-size: 18px;
-    font-weight: 400;
     max-width: 260px;
     width: 100%;
     padding-left: 16px;
